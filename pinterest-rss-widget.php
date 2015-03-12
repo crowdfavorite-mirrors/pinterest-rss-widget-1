@@ -52,9 +52,9 @@ function get_pins_feed_list($username, $boardname, $maxfeeds=25, $divname='stand
 		// Get Pinterest Feed(s)
 		include_once(ABSPATH . WPINC . '/feed.php');
 				if( empty($boardname) ){
-					$pinsfeed = 'http://pinterest.com/'.$username.'/feed.rss';
+					$pinsfeed = 'https://pinterest.com/'.$username.'/feed.rss';
 				}
-				else $pinsfeed = 'http://pinterest.com/'.$username.'/'.$boardname.'/rss';
+				else $pinsfeed = 'https://pinterest.com/'.$username.'/'.$boardname.'/rss';
 
                 // Get a SimplePie feed object from the Pinterest feed source
                 $rss = fetch_feed($pinsfeed);
